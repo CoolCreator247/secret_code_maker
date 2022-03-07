@@ -7,6 +7,8 @@ while True :
      Option = input(">")
      
      if Option =="2":
+          print("enter your key")
+          keynum = input(">")
           print("insert your text:")
           code_decode = input(">")
           lst = []
@@ -16,11 +18,13 @@ while True :
           newString = ""
           for i in lst:
                asciiNum = ord(i)
-               asciiChar = chr(asciiNum - 1)
+               asciiChar = chr(asciiNum - int(keynum))
                newString += asciiChar
           print(newString)   
 
      elif Option == "1":
+          print("enter your new key")
+          keynum = input(">")
           print("insert your text:")
           code_decode = input(">")
           lst = []
@@ -30,7 +34,7 @@ while True :
           newString = ""
           for i in lst:
                asciiNum = ord(i)
-               asciiChar = chr(asciiNum + 1)
+               asciiChar = chr(asciiNum + int(keynum))
                newString += asciiChar
           print(newString)     
 
