@@ -1,6 +1,6 @@
 
 print("Welcome to secret code maker!")
-print("1.Eecode a secret code")
+print("1.Encode a secret code")
 print("2.Decode the secret code")
 
 while True :
@@ -20,7 +20,9 @@ while True :
                asciiNum = ord(i)
                asciiChar = chr(asciiNum - int(keynum))
                newString += asciiChar
-          print(newString)   
+          print(newString)
+          print("1.Encode a secret code")
+          print("2.Decode the secret code")   
 
      elif Option == "1":
           print("enter your new key")
@@ -36,5 +38,7 @@ while True :
                asciiNum = ord(i)
                asciiChar = chr(asciiNum + int(keynum))
                newString += asciiChar
-          print(newString)     
+          print(newString)
+          print("1.Encode a secret code")
+          print("2.Decode the secret code")
 
